@@ -13,8 +13,7 @@ moveForward();
 moveForward();
 turnRight();
 moveForward();
-/*
-
+*/
 turnLeft();
 destroyBlock();
 moveForward();
@@ -33,3 +32,20 @@ for (var count2 = 0; count2 < 2; count2++) {
   moveForward();
   destroyBlock();
 }
+*/
+moveForward();
+placeBlockAhead("cobblestone");
+moveForward();
+for (var count = 0; count < 2; count++) {
+  moveForward();
+  destroyBlock();
+}
+*/
+for (var count = 0; count < 7; count++) {
+  destroyBlock();
+  ifLavaAhead(function() {
+    placeBlockAhead("cobblestone");
+  });
+  moveForward();
+}
+/*
