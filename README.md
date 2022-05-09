@@ -49,3 +49,31 @@ for (var count = 0; count < 7; count++) {
   moveForward();
 }
 /*
+
+turnLeft();
+ifLavaAhead(function() {
+  placeBlockAhead("cobblestone");
+});
+moveForward();
+ifLavaAhead(function() {
+  placeBlockAhead("cobblestone");
+});
+moveForward();
+destroyBlock();
+moveForward();
+destroyBlock();
+moveForward();
+turnRight();
+destroyBlock();
+for (var count = 0; count < 3; count++) {
+  ifLavaAhead(function() {
+    placeBlockAhead("cobblestone");
+  });
+  moveForward();
+  destroyBlock();
+}
+turnLeft();
+ifLavaAhead(function() {
+  placeBlockAhead("cobblestone");
+});
+*/
