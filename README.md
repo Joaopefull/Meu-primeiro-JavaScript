@@ -48,8 +48,7 @@ for (var count = 0; count < 7; count++) {
   });
   moveForward();
 }
-/*
-
+*/
 turnLeft();
 ifLavaAhead(function() {
   placeBlockAhead("cobblestone");
@@ -77,3 +76,34 @@ ifLavaAhead(function() {
   placeBlockAhead("cobblestone");
 });
 */
+turnRight();
+for (var count = 0; count < 6; count++) {
+  placeBlock("rail");
+  moveForward();
+}
+turnRight();
+for (var count2 = 0; count2 < 6; count2++) {
+  placeBlock("rail");
+  moveForward();
+}
+
+turnLeft();
+for (var count = 0; count < 2; count++) {
+  moveForward();
+}
+destroyBlock();
+moveForward();
+destroyBlock();
+moveForward();
+ifBlockAhead("", function() {
+  placeBlockAhead("bedrock");
+});
+moveForward();
+moveForward();
+turnLeft();
+for (var count2 = 0; count2 < 5; count2++) {
+  moveForward();
+}
+turnRight();
+shear();
+turnLeft();
